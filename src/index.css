@@ -1,0 +1,15 @@
+
+/* Reset de base */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Pour que l'app prenne toute la hauteur */
+#root {
+  min-height: 100vh;
+}

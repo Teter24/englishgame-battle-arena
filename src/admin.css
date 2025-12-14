@@ -1,0 +1,326 @@
+/* ----------------------------- */
+/*       PAGE DE CONNEXION       */
+/* ----------------------------- */
+
+.admin-login {
+  max-width: 350px;
+  margin: 100px auto;
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  border: 2px solid #3d571c;
+}
+
+.admin-login input {
+  width: 80%;
+  padding: 10px;
+  margin: 12px 0;
+  background: #111;
+  border: 1px solid #444;
+  color: white;
+  border-radius: 6px;
+}
+
+.admin-login button {
+  padding: 10px 18px;
+  background: #3d571c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.admin-login button:hover {
+  background: #4d6d24;
+}
+
+
+/* ----------------------------- */
+/*        PAGE SCOREBOARD        */
+/* ----------------------------- */
+
+.admin-page {
+  padding: 30px;
+  color: white;
+}
+
+.admin-header {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.logout-btn,
+.btn-add,
+.btn-remove,
+.btn-reset {
+  padding: 10px 14px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+/* Ajouter joueur */
+.btn-add {
+  background: #3d571c;
+}
+.btn-add:hover {
+  background: #4d6d24;
+}
+
+/* Retirer joueur */
+.btn-remove {
+  background: #8e441f;
+}
+.btn-remove:hover {
+  background: #a85329;
+}
+
+.btn-event {
+  background: #d17b00;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-event:hover {
+  background: #ff9d0a;
+}
+
+/* Ligne des boutons */
+.button-row {
+  display: flex;
+  gap: 15px;
+  align-items: center;  
+}
+
+/* Ligne du timer juste en dessous */
+.timer-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #1a1a1a;
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  margin-bottom: 25px;
+}
+
+/* Timer */
+.timer-display {
+  font-size: 22px;
+  font-weight: bold;
+  color: #d4ffb0;
+}
+
+.event-inline {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #222;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #3d571c;
+  color: #d4ffb0;
+  font-weight: bold;
+}
+
+/* Bouton OK */
+.event-ok {
+  background: #3d571c;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.2s;
+}
+
+.event-ok:hover {
+  background: #4a6f28;
+}
+
+
+/* Reset */
+.btn-reset {
+  background: #7a2a9c;
+}
+.btn-reset:hover {
+  background: #8f38b4;
+}
+
+/* Déconnexion */
+.logout-btn {
+  background: #c0392b;
+}
+.logout-btn:hover {
+  background: #e64c3c;
+}
+
+
+/* ----------------------------- */
+/*           TABLEAU             */
+/* ----------------------------- */
+
+.score-table-wrapper {
+  overflow-x: auto;
+}
+
+.score-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #222;
+  color: white;
+}
+
+.score-table th {
+  background: #3d571c;
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.score-table td {
+  padding: 10px;
+  border: 1px solid #333;
+  text-align: center;
+}
+
+.total-row {
+  background: #2f2f2f;
+  font-weight: bold;
+}
+
+.total-label {
+  background: #3d571c;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.total-cell {
+  text-align: center;
+  color: #d4ffb0;
+  font-size: 1.1rem;
+  padding: 8px;
+}
+
+/* Input du tableau */
+.score-table input {
+  width: 70px;
+  padding: 6px;
+  text-align: center;
+  background: #111;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 4px;
+}
+
+/* cellule critère */
+.criteria-cell {
+  background: #2f2f2f;
+  font-weight: bold;
+  color: #e0e0e0;
+  min-width: 180px;
+}
+
+/* Input nom joueur */
+.player-input {
+  width: 100px;
+  padding: 6px;
+  border-radius: 6px;
+  background: #111;
+  border: 1px solid #555;
+  color: white;
+  text-align: center;
+}
+
+.player-input::placeholder {
+  color: #999;
+}
+
+
+/* --- PAGE LOGIN GM --- */
+
+.login-container {
+  max-width: 350px;
+  margin: 120px auto;
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid #3d571c;
+  color: white;
+  box-shadow: 0 0 12px #00000055;
+}
+
+.login-container h1 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #d4ffb0;
+}
+
+.login-container input {
+  width: 80%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background: #111;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.2s;
+}
+
+.login-container input:focus {
+  border-color: #3d571c;
+  box-shadow: 0 0 8px #3d571c88;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background: #3d571c;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.2s;
+}
+
+.login-container button:hover {
+  background: #4d6d24;
+  transform: translateY(-2px);
+}
+
+.btn-export {
+  margin-top: 20px;
+  background: #3d571c;
+  padding: 12px 20px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.2s;
+}
+
+.btn-export:hover {
+  background: #4e7524;
+  transform: translateY(-2px);
+}
+

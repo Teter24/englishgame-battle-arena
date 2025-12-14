@@ -1,0 +1,319 @@
+/* ====== LAYOUT GENERAL ====== */
+/* Reset global */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #000; 
+  height: 100%;
+  width: 100%;
+}
+
+
+.app-container {
+  min-height: 100vh;
+  background-color: #0a0a0a; 
+  color: #e6e6e6; 
+  display: flex;
+  flex-direction: column;
+  font-family: "Georgia", serif;
+}
+
+/* ====== HEADER ====== */
+.header {
+  background-color: #0f738f; 
+  border-bottom: 3px solid #3d571c; 
+  padding: 6px 0;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ====== LOGO + TITRE ====== */
+.logo-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+  transition: transform 0.2s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.site-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #0a0a0a;
+}
+
+/* ====== NAVIGATION ====== */
+.nav-links {
+  display: flex;
+  gap: 40px;
+  align-items: center;   
+  justify-content: center;  
+}
+
+.nav-item {
+  color: #3b3b3b;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.nav-item:hover {
+  color: #1f2e11;
+  font-weight: bold;
+}
+
+/* ====== CONTENU PRINCIPAL ====== */
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 40px 24px;
+}
+
+section {
+  width: 100%;
+}
+
+/* === TITRES SECTIONS === */
+h2 {
+  font-size: 26px;
+  color: #cdd8c6;
+  margin-bottom: 50px;
+  padding-top: 10px;
+}
+
+.content-block h2 {
+  text-align: center;
+}
+
+/* ====== BLOCS CONTENU ====== */
+.content-block {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid #3d571c;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 32px;
+}
+
+
+/* ====== VIDEO ====== */
+.video-wrapper {
+  width: 100%;
+  max-width: 900px;  
+  margin: 0 auto;    
+  padding: 0;
+  box-shadow: 0 0 40px #00b575;
+  border-radius: 10px;
+}
+
+.video-player {
+  width: 100%;
+  height: auto;
+  max-height: 400px;  
+  object-fit: contain; 
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  background: black;
+}
+
+
+video {
+  width: 100%;
+  display: block;
+}
+
+.faq-section {
+  margin-top: 28px;
+  padding: 20px 24px;
+  background-color: #0f0f0f;
+  border: 1px solid #3d571c;
+  border-radius: 10px;
+  color: #e6e6e6;
+}
+
+.faq-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #3d571c;
+  margin-bottom: 16px;
+}
+
+.faq-item {
+  margin-bottom: 18px;
+}
+
+.faq-question {
+  font-weight: bold;
+  font-size: 17px;
+  color: #cdd4c2;
+}
+
+.faq-answer {
+  margin-top: 4px;
+  color: #bfc4b8;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+/* ====== SECTION PDF ====== */
+
+.pdf-section {
+  margin-top: 32px;
+  background-color: #0a0a0a;
+  border: 1px solid #3d571c;
+  border-radius: 12px;
+  padding: 16px 20px;
+  color: #e6e6e6;
+}
+
+.pdf-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #3d571c;
+  margin-bottom: 8px;
+}
+
+.pdf-text {
+  font-size: 15px;
+  color: #d0d0d0;
+  margin-bottom: 12px;
+}
+
+.pdf-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #3d571c;
+  background-color: #3d571c;
+  color: #f5f5f5;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.pdf-button:hover {
+  background-color: #2f4316;
+  transform: translateY(-1px);
+}
+
+/* ====== PREVIEW PDF ====== */
+.pdf-preview-wrapper {
+  margin-top: 16px;
+  border: 2px solid #3d571c;        
+  border-radius: 8px;
+  overflow: hidden;                 
+  background-color: #0a0a0a;        
+}
+
+/* zone d'affichage */
+.pdf-preview {
+  margin-top: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pdf-badge {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid #3d571c;
+  color: #3d571c;
+  background-color: rgba(61, 87, 28, 0.08);
+}
+
+.pdf-filename {
+  font-size: 13px;
+  color: #bbbbbb;
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+/* cadre de l'aperçu */
+.pdf-frame-wrapper {
+  width: 100%;
+  max-width: 900px;
+  height: 480px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid #3d571c;
+  background: #111;
+  box-shadow: 0 0 14px rgba(0,0,0,0.6);
+}
+
+
+.pdf-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+/* ====== FOOTER ====== */
+.footer {
+  background-color: #059e7e;
+  border-top: 3px solid #3d571c;
+  text-align: center;
+  padding: 16px;
+  font-size: 15px;
+  color: #3b3b3b;
+  margin-top: auto;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    gap: 16px;
+  }
+
+  .site-title {
+    font-size: 22px;
+  }
+
+  .logo {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .video-player {
+    max-height: 220px;
+  }
+
+  .video-wrapper {
+    box-shadow: 0 0 20px #00b575;
+  }
+}
+
+@media (max-width: 600px) {
+  .pdf-frame-wrapper {
+    height: 300px;
+  }
+}
